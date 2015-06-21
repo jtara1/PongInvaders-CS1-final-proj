@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Allegero-test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CS1-final-proj" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../../Downloads/allegro-5.0.10-mingw-4.7.0/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro-5.0.10-monolith-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_physfs-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_ttf-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_primitives-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_dialog-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_memfile-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_image-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_font-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_color-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_acodec-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro_audio-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\liballegro-5.0.10-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libdumb-0.9.3-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libFLAC-1.2.1-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libfreetype-2.4.8-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libogg-1.2.1-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libvorbisfile-1.3.2-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libvorbis-1.3.2-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libopenal-1.14-static-mt.a" />
+					<Add library="..\..\..\Downloads\allegro-5.0.10-mingw-4.7.0\lib\libzlib-1.2.5-static-mt.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libgdiplus.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libuuid.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libkernel32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libwinmm.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libpsapi.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libopengl32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libglu32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libuser32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libcomdlg32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libgdi32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libshell32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libole32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libadvapi32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libws2_32.a" />
+					<Add library="..\..\..\..\..\MinGW\lib\libshlwapi.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/CS1-final-proj" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="PongInvaders.cpp" />
+		<Unit filename="PongInvaders.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
